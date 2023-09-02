@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 10px;
+            /* box-shadow:5px 5px 20px red; */
+            box-shadow: 2px 2px 2px red;
+
+            /* first valur horizontal
+            second val vertical
+            third for  blur effect to the shadow
+            last one for color */
+        }
+        .container2{
+            margin-top: 15px;
+            border: 2px solid black;
+            padding: 10px;
+            /* Define the spread radius of the shadow: */
+            box-shadow: 10px 10px 8px 10px #888888;
+
+         
+            /* 4th one spread ka radius */
+        }
+
+        .container3{
+            margin-top: 15px;
+            border: 2px solid black;
+            box-shadow: inset 10px 10px;
+
+            /* inset se shadow andar ki traf ata hai */
+        }
+        .container4{
+            margin-top: 15px;
+            border: 2px solid black;
+            box-shadow: inset 5px 5px 5px 10px red;  
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, dolores.</p>
+
+    </div>
+
+    <div class="container2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, dolores.</p>
+
+    </div>
+    <div class="container3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, dolores.</p>
+
+    </div>
+
+    <div class="container4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, dolores.</p>
+
+    </div>
+    
+    
+</body>
+</html>
