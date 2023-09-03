@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            background-color: beige;
+            border-radius: 5px solid black;
+            direction: flex;
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color:blue;
+            border: 2px solid yellow;
+            border-radius:20px;
+            margin: 10px;
+            animation-name: rightMov;
+            position: relative;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count:infinite;
+            animation-direction: alternate;
+            animation-fill-mode: none;
+        }
+        .box2{
+            width: 350px;
+            height: 80px;
+            background-color:blue;
+            border: 2px solid yellow;
+            border-radius:20px;
+            margin: 10px;
+            animation-name:leftMOve;
+            position: relative;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count:infinite;
+            animation-direction: alternate;
+            animation-fill-mode: none;
+
+        }
+
+        @keyframes rightMov{
+            from{
+                top:0;
+                left:0;
+            }
+
+            to{
+               top:0;
+               left:1200px;
+            }
+        }
+
+        @keyframes leftMOve{
+            from{
+                top:400px;
+                left:1200px;
+            }
+
+            to{
+                top:400px;
+                left:0px;
+            }
+            
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 3px solid yellow;
+            border-radius: 50px;
+            margin: 5px;
+            position: relative;
+            top:30%;
+            left:500px;
+          animation-name: cir;
+          animation-duration: 4s;
+          animation-iteration-count:infinite;
+          animation-fill-mode:none;
+          animation-timing-function: ease-in-out;
+            
+         }
+
+         @keyframes  cir{
+            
+            0% {
+              top: 1%;
+              left: 5%;
+            }
+
+            25%{
+                 top:5%;
+                 left:90%;
+            }
+
+            50%{
+               top:70%;
+               left:10%;
+            }
+
+            75%{
+          top:70%;
+          left:90%;
+
+            }
+
+
+
+         }
+
+       
+       
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+
+        </div>
+
+        <div class="circle">
+
+        </div>
+
+        <div class="box2">
+
+        </div>
+
+    </div>
+</body>
+</html>
